@@ -1,5 +1,5 @@
 //Emma Schmitt
-//Github Repo:
+//Github Repo: https://github.com/EmmaSchmitt22/cs81-module4b-mydataexplorer
 
 //Define Array
 let weekData = [
@@ -11,7 +11,6 @@ let weekData = [
     {day: "Saturday", sleepHours: 10, screenTime: 2.5,mood: "energized", caffeineIntake: 2, focusLevel: 7},
     {day: "Sunday", sleepHours: 9, screenTime: 5, mood: "fine", caffeineIntake: 1, focusLevel: 5},
 ];
-
 
 //Tuesday had the most screen time, and the best focus day was Thursday.
 //I predict that higher caffeine intake helps focus (if capped at 2 cups).
@@ -25,6 +24,7 @@ function averageSleep(log){
     return sleepTotal / log.length;
 }
 
+//Function for finding the number of days with caffeine intake of 1 or lower
 function numLowCafDays(log){
     let lowCafDays = 0
     for (let entry of log) {
@@ -35,7 +35,7 @@ function numLowCafDays(log){
     return lowCafDays
 }
 
-
+//Function for finding the highest amount of screen time in an entry
 function highestScreenTime(log) {
     let highestScreenTime = log[0].screenTime;
     for (let entry of log) {
@@ -46,8 +46,7 @@ function highestScreenTime(log) {
     return highestScreenTime;
 }
 
-
-
+//Function for determining the correlation of caffeine intake to focus
 function correlateCaffeineToFocus(log) {
     let lowCafHighFocus = 0;
     let highCafHighFocus = 0;
@@ -74,7 +73,6 @@ function correlateCaffeineToFocus(log) {
         return "Results inconclusive.";
     }
 }
-
 
 //TEST CALLS
 console.log(averageSleep(weekData));
