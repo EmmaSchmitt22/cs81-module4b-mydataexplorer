@@ -1,1 +1,3 @@
+My predictions were generally correct. I had to use falsified data since I was not keeping an accurate log of my habits throughout the week. But I chose figures that generally reflect my own habits. 
 
+It was most difficult to create functions that have multiple steps, like my final correlateCaffeineToFocus function. I created an evaluation system and used that to gather data on each entry's focus and caffeine level, then had to cross-compare to see which of those was highest. I'm not sure I did this most efficiently or accurately, since my method divides things into binary groups (focused or not focused, high caffeine vs low caffeine) as opposed to taking a more nuanced approach.  
