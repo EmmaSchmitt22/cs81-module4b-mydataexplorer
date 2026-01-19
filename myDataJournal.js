@@ -1,5 +1,3 @@
-//Hello World!
-
 //Define Array
 
 let weekData = [
@@ -12,12 +10,38 @@ let weekData = [
     {day: "Sunday", sleepHours: 9, screenTime: 5, mood: "fine", caffeineIntake: 1, focusLevel: 5},
 ];
 
-/*day (string)
-sleepHours (number)
-screenTime (hours)
-mood (string)
-caffeineIntake (cups)
-focusLevel (1–10)*/
 
 //Tuesday had the most screen time, and the best focus day was Thursday.
 //I predict that higher caffeine intake helps focus, if capped at 2 cups.
+
+//Function for finding average sleep time
+function averageSleep(log){
+    let sleepTotal = 0
+    for (let entry of log) {
+        sleepTotal += entry.sleepHours;
+    }
+    return sleepTotal / log.length;
+}
+
+function numLowCafDays(log){
+    let lowCafDays = 0
+    for (let i = 0; i < cafCount.length; i++) {
+        if (cafCount <= 1) {
+            lowCafDays++
+        }
+    }
+    return lowCafDays
+}
+
+
+function mostFrequentMood(log){
+    for (let i = 0; i <= 7; i++) {
+
+    }
+
+}
+
+//def correlateCaffeineToFocus(log)
+
+//TEST CALLS
+console.log(averageSleep(weekData));
